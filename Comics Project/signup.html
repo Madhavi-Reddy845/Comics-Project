@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<style>
+body{
+       background-image: url('https://img.freepik.com/premium-photo/collage-comic-book-pages-with-superheroes-villains_36682-214642.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 100vh;
+        margin:0;
+        background-attachment: fixed;
+
+    }
+/* Center the form on the page */
+/* Center the form on the page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Set height to 100% of the viewport */
+    margin: 0;      /* Remove default body margin */
+    background-color: #f0f0f0; /* Optional: add background color */
+}
+
+.form {
+    /* Background solid color */
+    background: rgb(65, 62, 59);
+    border-radius: 10px;
+    color: white;
+    width: 350px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    /* Center the form itself */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title (legend) styling */
+legend {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Label and input styling */
+label {
+    font-weight: medium;
+    font-size: 1em;
+}
+
+#service {
+    color: white;
+}
+
+/* ---------------------------Input and select styles------------------- */
+
+input[type="txt"],input[type="password"],input[type="email"],select {
+    width:100%;
+    margin: 10px 0;
+    padding:10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+/* Button styling */
+
+button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    width: 60%;
+    height: 40px;
+    background-color:#45a049;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: medium;
+    cursor: pointer;
+    margin-left:50px;
+
+}
+button [type="submit"]{
+    display: block;
+    justify-content: center;
+
+
+}
+
+button:hover {
+    background-color: #45a049;
+}
+/* Aligning gender section and agreement */
+
+#log{
+    color:#45a049;
+}
+</style>
+
+
+
+<body>
+    <form action="#"method="POST">
+        <fliedset>
+            <div class="form">
+            <legend>Sign Up</legend>
+                     
+            <label name="first-name">Full Name:</lable>
+            <input type="txt" placeholder="Enter First name" name="first-name" id="fn"><br>
+
+            <!-- ----------password----------- -->
+
+            <label for="password">Password</label>
+            <input type="password" placeholder=" password"id="password" name="password" id="pd"><br>
+
+            <!-- -------confirm---password----------- -->
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password"  placeholder="confirm password" id="cd" name="confirm-password"><br>
+           <!-- -----------------------Email------------------ -->
+
+           <label for="email">Email</label>
+           <input type="email" name="email" placeholder="Email" required="">
+
+
+            <!-- -----------------agremment--------------- -->
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">I agree to the <a href="#" id="service">Fabled Realms Agreement</a> and <a href="#"id="service">Privacy Policy</a>.</label><br>
+               
+                
+            <button>Sign Up</button>
+            <h4>Already have an account? <a href="./Login.html" targer="_blank" id="log">Login</a></h4>
+        </fliedset>
+    </form>
+</body>
+</html>

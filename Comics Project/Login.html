@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<style>
+    body{
+        background-image: url('https://img.freepik.com/premium-photo/retro-comic-book-style-image-with-multiple-panels-featuring-superheroes_36682-87252.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+    }
+
+    form {
+    background-color:rgb(49, 59, 111);
+    color: black;
+    border-radius: 10px;
+    width: 350px;
+    height: 650px;
+    margin: auto;
+    padding: 20px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    margin-top:30px;
+    margin-bottom: -20px;
+
+}
+.Login{
+    margin-top:-10px;
+}
+h4 {
+    text-align: center;
+    font-size: 2em;
+    color:white;
+}
+
+h2 {
+    text-align: center;
+    margin-top: -10px;
+    color:white;
+
+}
+
+#forgot {
+    color:white;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: medium;
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    /* Removed the border property */
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    width: 60%;
+    height: 40px;
+    background-color:#45a049;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: medium;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+#account {
+    text-align: center;
+    font-weight: medium;
+    color:white;
+}
+
+#sign {
+    color:#45a049;
+}
+
+#google, #micro {
+    display: block;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0;
+    text-align: center;
+    width: 60%;
+    background-color:#45a049;
+    color: white;
+    font-size: 1.1em;
+    font-weight: medium;
+    cursor: pointer;
+    margin-left: 40px;
+}
+</style>
+<body>
+    <form>
+        <fieldset>
+            <div class="Login">
+            <h4>Login</h4>
+            <h2>Welcome Back!</h2>
+            <input type="txt" placeholder="Enter Your Username/Email" name="username" id="fn"><br>
+            <input type="password" placeholder="Enter Your Password" name="password" id="pn">
+            <p id="forgot">Forgot Password</p>
+            <button>Login</button>
+            <p id="account">Dont't have an account?  <a href="./signup.html" target="_blank">SignUp</a>
+            </p>
+            _______________ Or ______________
+            <p id="google">Login with Google</p>
+            <p id="micro">Login with Microsoft</p>
+
+            </div>
+
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>

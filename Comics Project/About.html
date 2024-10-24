@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Fabled Realms</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+    
+
+        h2, h3 {
+            color: #ff689d;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image:url('https://img.freepik.com/premium-photo/collection-vintage-comic-book-covers_36682-218746.jpg');
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: #fff;
+        }
+/* Hero Section */
+/* .body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+    text-align: center;
+} */
+
+#mainhead {
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.hero p {
+    font-size: 1.4em;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    max-width: 600px;
+}
+        /* About Section */
+        .about-intro {
+            background-color: #f0f0f0;
+            padding: 40px 20px;
+        }
+
+        .about-intro p {
+            font-size: 20px;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        /* Our Story Section */
+        .ourstory {
+            background-color: #ffffff;
+            padding: 60px 20px;
+        }
+
+        .ourstory p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* About Us Section */
+        .About {
+            background-color: #fafafa;
+            border-radius: 10px;
+            padding: 40px;
+            margin-bottom: 40px;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #us {
+            font-size: 1.8em;
+            background-color: #ff689d;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .About p {
+            text-align: center;
+            color: #444;
+            font-size: 1.1em;
+        }
+
+        /* Button */
+        #now {
+            background-color: #ff689d;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #now:hover {
+            background-color: #ff407d;
+        }
+
+        /* Footer Section */
+        #cta-section {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        #cta-section p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+
+<section class="hero">
+    <div>
+        <h1 id="mainhead">Unleashing Imagination</h1>
+        <p>Step into the vibrant world of comics where creativity knows no bounds. From epic sagas to thrilling adventures, explore stories that captivate the mind and soul.</p>
+    </div>
+</section>
+
+    <!-- About Us Intro -->
+    <section class="about-intro">
+        <p>At <strong>Fabled Realms</strong>, our mission is to bring stories to life. We offer a world of action-packed adventures, fantastical journeys, and historical tales. An epic journey awaits behind every comic cover!</p>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="ourstory">
+        <h2>Our Story</h2>
+        <p>Born from a passion for storytelling and visual art, we aim to make every comic a gateway to a new world. Whether you seek thrilling action, fantastical worlds, or a historical deep dive, <strong>Fabled Realms</strong> offers a unique collection of experiences to ignite your imagination.</p>
+    </section>
+
+    <!-- About Us Section -->
+    <div class="About">
+        <h3 id="us">About Us</h3>
+        <p>At Fabled Realms, we believe in the power of stories to transport readers to worlds beyond imagination. Our platform curates an expansive collection of comics that span across genres—from action-packed adventures and epic fantasy tales to insightful historical narratives. Every story is carefully crafted to ignite the imagination and inspire wonder.
+
+            Founded by a team of passionate storytellers and comic enthusiasts, Fabled Realms is dedicated to bringing both established creators and emerging voices to the forefront. Our mission is to offer readers a portal into new worlds with each comic we share, creating a vibrant community of fans who seek connection through the magic of storytelling.
+            
+            Join us as we explore the boundless possibilities of comics, where every page is a new adventure waiting to unfold.
+            
+            </p>
+        <button id="now">Explore Now</button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer id="cta-section">
+        <p>Ready to dive into the world of comics? Start your journey today and become a part of the <strong>Fabled Realms</strong> community!</p>
+    </footer>
+
+</body>
+</html>

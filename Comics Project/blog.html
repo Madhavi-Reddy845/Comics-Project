@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+</head>
+<style>
+    /* Blog Layout */
+.blog-container {
+    display: flex;
+    /* margin: 20px; */
+}
+
+
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 20px;
+
+}
+
+.blog-posts article {
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-posts article img {
+    height: auto;
+    /* border-radius: 10px; */
+}
+
+.blog-posts article h3 {
+    margin-top: 10px;
+}
+
+.blog-posts .read-more {
+    margin-top: 10px;
+    color: #ff609d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-posts .read-more:hover {
+    text-decoration: underline;
+}
+
+/* -----------feature blog post---------- */
+
+.featured-blog {
+    flex: 2;
+    margin-top:20px;
+    border-radius: 10px;
+    /* background-color: #cebfbf; */
+
+}
+.featured-blog .read-more{
+    color: #ff609d;
+
+
+}
+
+.featured-blog img {
+    /* width: 100%;
+    height: auto; */
+    border-radius: 10px;
+}
+
+
+/* Comment Section Styling */
+
+.comment-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+}
+
+.comment-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#comment-form input, #comment-form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+}
+
+#comment-form textarea {
+    height: 100px;
+}
+
+#comment-form button {
+    width: 150px;
+    padding: 10px;
+    background-color: #ff609d;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#comment-form button:hover {
+    background-color: #ff407d;
+}
+
+#comments-display {
+    margin-top: 30px;
+}
+
+#comments-display .comment {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+#comments-display .comment p {
+    margin: 0;
+}
+
+
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+</style>
+<body>
+        <!-- Blog Section -->
+        <h2>Recent Posts</h2>
+        <main class="blog-container">
+
+            <!-- Blog Posts List -->
+
+            <section class="blog-posts">
+            
+                <!-- ---------------------------post 1------------------ -->
+                <article>
+                    <img src="./All_Items.jpg" alt="Post Image 1" width="350" height="auto">
+                    <h3>Top 5 Superhero Comics of All Time</h3>
+                    <p>Discover the most iconic superhero comics<br> that have shaped the genre...</p>
+                    <a href="post2.html" class="read-more">Read More</a>
+                </article>
+                <!-- ---------------------post2---------------------- -->
+                <article>
+                    <img src="./1501510359-scifi-comics-lead.jpg" alt="Post Image 2" width="300" height="auto">
+                    <h3>The Evolution of Sci-Fi Novels</h3>
+                    <p>A deep dive into the history of science fiction and<br> the stories that revolutionized the genre...</p>
+                    <a href="post3.html" class="read-more">Read More</a>
+                </article>
+                <!-- -------------------------post 3--------------------------------- -->
+
+                <article>
+                    <img src="./static-assets-upload13758228713254140458.jpg" alt="Post Image 2" width="300" height="auto">
+                    <h3>The 20 Male Anime Characters of All Time</h3>
+                    <p>Explore the top 20 iconic male anime characters who<br> have captivated fans with their unforgettable stories...</p>
+                    <a href="post3.html" class="read-more">Read More</a>
+                </article>
+
+<!-- -------------------------------------------------POst 4---------------- -->
+                <article>
+                    <img src="./top_10_women.jpg" alt="Post Image 2" width="300" height="auto">
+                    <h3>The 20 Female Anime  Characters of All Time</h3>
+                    <p>Explore the top 20 iconic Female anime characters who<br> have captivated fans with their unforgettable stories...</p>
+                    <a href="post3.html" class="read-more">Read More</a>
+                </article>
+
+                <!-- Add more blog posts here -->
+            </section>
+        </main>
+
+        <!-- Featured Blog Section -->
+        <section class="featured-blog">
+            <h2>Featured Blog Post</h2>
+            <article>
+                <img src="./Batgirl_Barbar.jpg" alt="Featured Blog Image" height="300" width="300">
+                <img src="./superman23.jpg" alt="Featured Blog Image" height="300"width="290">
+                <img src="./xmen.jpg" alt="Featured Blog Image" height="300"width="290">
+                <img src="./Deadpool12.jpg" alt="Featured Blog Image" height="300" width="300">
+                <img src="./ironman.jpg" alt="Featured Blog Image" height="300" width="300">
+
+                <h3>The Journey Through Fantasy Worlds</h3>
+                <p>Explore the worlds of adventure, fantasy, and history that <strong>Fabled Realms</strong> has to offer. Dive into our top picks and reviews...</p>
+                <a href="post1.html" class="read-more">Read More</a>
+            </article>
+        </section>
+
+
+
+                <!-- Comment Section -->
+                <section class="comment-section">
+                    <h3>Comments</h3>
+        
+                    <!-- Comment Form -->
+                    <form id="comment-form" action="#">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Your email">
+        
+                        <label for="comment">Comment:</label>
+                        <textarea id="comment" name="comment" required placeholder="Your comment"></textarea>
+        
+                        <button type="submit">Submit Comment</button>
+                    </form>
+        
+
+
+
+
+
+
+
+
+
+                    <!-- Display Comments -->
+                    <div id="comments-display">
+                        <h4>Previous Comments</h4>
+                        <div class="comment">
+                            <p><strong>John Doe:</strong> Loved this article! Can't wait for the next post.</p>
+                        </div>
+                        <!-- More comments will be dynamically added here -->
+                    </div>
+                </section>
+            </main>
+        
+        
+            <!-- JavaScript to handle comment submission -->
+            <script src="scripts.js"></script>
+        </body>
+        </html>
+        
+    
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Fabled Realms. All Rights Reserved.</p>
+            <div class="social-media">
+                <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+            </div>
+        </footer>
+    
+    
+    
+</body>
+</html>

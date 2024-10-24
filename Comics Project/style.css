@@ -1,0 +1,447 @@
+/* ----for tile fabled realsm styles font */
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=IM+Fell+English+SC&family=Rancho&display=swap');
+/* for navbar menus font styles  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* -----------------new releases left panel option font styles-------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+
+
+*{
+    margin:0px;
+    box-sizing: border-box;
+}
+/* ------title styles---------------------------- */
+.header{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    margin-right:20px
+}
+
+#title {
+    font-family: "Euphoria Script", cursive;
+    font-weight:400;
+    font-style:bold;
+    color:white;
+    font-size: 60px;
+    margin-left:40px;
+    }
+/* ------------------------------navbar font sytles---------- */
+.navbar ul li a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: medium; 
+    color: white;
+    margin-top:25px;
+
+}
+.navbar {
+    /* background-color: rgb(63, 62, 65);  */
+    background-color: rgb(81, 69, 69);
+
+    width: 100%; /* Full width navbar */
+    padding: 10px 20px; /* Add padding for top/bottom and left/right */
+}
+
+ul {
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align items to the right */
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    justify-items: center;
+
+}
+.items{
+    margin-top: -60px;
+}
+
+ul li {
+    padding: 10px 15px; /* Padding around each menu item */
+    margin-left: 20px; /* Space between items */
+}
+li:hover{
+    background: rgb(122, 211, 244);
+   /* border-radius: 20px;
+   padding:10px 5px; */
+   text-align: center;
+}
+
+
+
+
+/* --------Sign up button styles */
+#sign{
+    border: 2px solid rgb(248, 246, 246);
+    background:rgb(255, 104, 157);
+    color:rgb(246, 240, 240);
+    padding:5px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align:center;
+    cursor: pointer; 
+    box-sizing: border-box;
+    margin-top:2px;
+    margin-right:4px;
+}
+#sign:hover {
+    background: rgb(122, 211, 244);
+}
+
+
+/* -------Background-------comic store image styles----------------- */
+.bgimg{
+    background-image: url("https://dashtoon.com/blog/content/images/size/w2000/2024/04/18775871.webp");
+    height:100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* filter:saturate(2); */
+    /* opacity: 0.8; */
+}
+.aboutcomic{
+    color:white;
+    font-size: 22px;
+    text-align:center;
+    padding:20px;
+    border-radius: 10px;
+    /* background-color: rgb(138, 128, 128); */
+    background-color: rgb(48, 43, 43);
+    position: absolute;
+    bottom: 0;
+    margin-left: 50px;
+}
+#comic{
+    border:2px solid white;
+    font-weight: bold;
+    border-radius:10px;
+    margin:10px;
+    background:rgb(255, 104, 157);
+    color:white;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+    padding:10px;
+}
+button{
+    margin-bottom:20px;
+
+}
+
+/* ------------------------New features--------------------------- */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.popular-comics {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e8f0fe;
+}
+
+.popular-comics h2 {
+    font-size: 36px;
+    color: #1e90ff;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+#shows {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-item {
+    background-color: #fff;
+    border-radius: 15px;
+    border: 2px solid #dcdcdc;
+    margin: 20px;
+    padding: 10px;
+    width: 320px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.img-item img {
+    border-radius: 10px;
+}
+
+.img-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.img-item h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.img-item h4 {
+    font-size: 18px;
+    color: #1e90ff;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.img-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+.img-item strong {
+    color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    #shows {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-item {
+        width: 90%;
+    }
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    /* color: #2c3e50; */
+    color:rgb(255, 104, 157);
+    text-transform: uppercase;
+}
+
+
+h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    color: #e74c3c;
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* -----------content alignment for left and right panels---------------------------- */
+
+.popular {
+    display: flex;
+    justify-content: flex-start;
+    font-family: Arial, sans-serif;
+    margin: 15px;
+    padding-top:20px;
+}
+
+.left {
+    width: 25%;
+    border-right: 2px solid #ccc;
+    border-radius: 10px; /* Reduced border-radius for consistency */
+    /* margin: 20px;  */
+    padding: 10px; 
+    background: rgb(167, 155, 155);
+    margin-top: 70px;;
+}
+
+.left h5 {
+    width:50%;
+    border: 2px solid black;
+    font-size: 16px;
+    font-weight: medium;
+    padding: 5px; /* Increased padding for better appearance */
+    background: rgb(255, 104, 157);
+    color: white;
+    border-radius: 10px;
+    text-align:center;
+    /* margin-bottom: 20px;  */
+    margin-top: 20px;
+}
+
+.check {
+    margin-bottom:0;
+    
+}
+
+.check input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and label */
+    margin-bottom: 10px; /* Space below each checkbox */
+}
+
+.check label {
+    font-weight: 600; /* Made the label bolder for better visibility */
+    display: inline-block; /* Ensures label aligns correctly */
+    margin-bottom: 5px; /* Space between labels */
+}
+ /* -------------new relesaess */
+
+ #newrel{
+    color:black;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-transform: uppercase;
+    text-align: center;
+    
+ }
+ 
+
+
+
+/* -------------------------Right panel designs----------- */
+
+
+.right{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.comic-item{
+    border:none;
+    border-radius:20px;
+    padding:10px 25px;
+    margin:10px 5px;
+    text-align:center;
+    width:350px;
+    background-color:white;
+
+}
+.comic-img{
+    border-radius:5px;
+}
+.comic-item:hover {
+    transform: translateY(-10px);
+}
+@media (max-width: 768px) {
+    .right {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+  
+
+
+/* -----------------------Footer container design styles-------------------------------------- */
+
+footer{
+    background: #333;
+    color:white;
+    padding: 40px 20px;
+}
+.footer-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* -----------h3 stylels------------- */
+h3 {
+    color: #ff689d; /* Matching color theme from the website */
+    margin-bottom: 15px;
+}
+/* ---------------p styles---------- */
+.footer-about p, .footer-contact p, .footer-bottom p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+/* ---------ul styles----- */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+/* Social Media Icons */
+.footer-social a {
+    margin: 5px;
+    display: inline-block;
+}
+
+.footer-social a img {
+    width: 30px;
+    height: auto;
+}
+/* Newsletter Section */
+.newsletter {
+    background-color: #444;
+    padding: 20px;
+    text-align: center;
+}
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #ff689d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* ------copy right styles---------------- */
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.footer-contact p,.footer-about p{
+    color:white;
+}
+.footer-about p, .footer-contact p, .footer-bottom p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+
+
+
+
+

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* -----Cateogery  box styles----- */
+        body {
+            display: flex;
+            justify-content: flex-start;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .all{
+            margin-top: 20px;
+        }
+
+        /* Left side - categories section */
+        #left-panel {
+            /* width: 50%; */
+            padding-right: 20px;
+            border-right: 2px solid #ccc;
+        }
+
+        /* Categories box styles */
+        #cat,#price,#ratings {
+            border: 2px solid black;
+            font-size: 16px;
+            font-weight: medium;
+            text-align: center;
+            padding: 5px;
+            background: rgb(255, 104, 157);
+            color: white;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            margin-left:5px;
+            width:50%;
+
+        }
+        #cat{
+            margin-top:25px;
+
+        }
+        .check{
+            border:none;
+            border-radius:5px;
+            /* background-color: rgb(91, 76, 76); */
+            width:300px;
+            margin-top:25px;
+            color:black;
+        }
+
+        /* .check label, .check input {
+            display: inline-block;
+            vertical-align: middle;
+        } */
+
+        /* .check {
+            margin-bottom: 15px;
+        } */
+
+
+        /* -------------Right side panel images styles section-------------- */
+        #right-panel {
+            width: 100%;
+            padding-left: 20px;
+        }
+       /* -----------action images styles---------- */
+        .action{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content:space-around;
+            margin-top:20px;
+            padding:10px 20px;
+            margin-left:-30px;
+
+
+        }
+
+
+
+
+        
+
+/* Align content in the action container (image grid) */
+
+     #show{
+        margin-left:30px;
+     }
+      .action {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;  /* Aligns items to the left */
+            gap: 20px;                    /* Adds spacing between items */
+        }
+
+/* Individual image item styles */
+        .image-item {
+            width: 30%;                   /* Controls the width of each image item */
+            text-align: center;            /* Centers the text under each image */
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+
+        }
+
+        .image-item img{
+            border:none;
+            border-radius: 5px;
+            margin-top:20px;
+        }
+        
+
+/* ------star color styles---------------- */
+    </style>
+</head>
+<body>
+    <div id="all">
+        <h2>Collections</h2>
+    <form>
+        <!-- -------------collections---------------- -->
+        <div class="check">
+
+        <button id="cat">Categories</button><br>
+
+        <input type="checkbox" name="act">
+        <label for="act">Action&Adventure</label><br>
+
+        <input type="checkbox" name="his">
+        <label for="his"></label>Biography&History<br>
+
+
+        <input type="checkbox" name="fan">
+        <label for="fan">fantasy Novels</label><br>
+
+        <input type="checkbox" name="sci">
+        <label for="sci">Science Fiction</label><br>
+
+        <input type="checkbox" name="hero">
+        <label for="Hero">Super Heros</label><br>
+
+
+        <!-- -----Price------- -->
+
+
+        <h4 id="price">Price</h4>
+        <input type="checkbox" name="min">
+        <label for="min">Min</label>
+        <input type="checkbox" name="Max">
+        <label for="Max">Max</label><br>
+
+        <!-- --------------------Customer Rating ----------- -->
+
+        <p id="ratings">Customer Ratings</p>
+
+        <!-- 5 star ratings--------- -->
+        <input type="checkbox" name="star">
+        <label for="Star">5 Star</label><br>
+
+        <!-- --------------------------4star ratings----------------------- -->
+        <input type="checkbox" name="star">
+        <label for="Star">4 Star</label><br>
+
+        <!-- -------------------------------------3star ratings-------------------------------- -->
+        <input type="checkbox" name="star">
+        <label for="Star">3 Star</label><br>
+
+ <!-- ------------------------------------------------------2star ratings-------------------------- -->
+        <input type="checkbox" name="star">
+        <label for="Star">2 Star</label><br>
+
+    </form>    
+
+
+
+       </div>
+    </div>
+
+    <div id="right-panel">
+        <h3 id="show">Showing 1-12 of 41 Results</h3>
+
+        <div class="action">
+            <!-- First Image Item -->
+            <div class="image-item">
+                <img src="./Batman-Barbare.jpg" alt="Action Adventure" width="300" height="250">
+                <h3>Super Hero</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <!-- Second Image Item -->
+            <div class="image-item">
+                <img src="./action-adventure12.jpg" alt="Action Adventure 12"width="300" height="250" >
+                <h3>Action Adventure </h3>
+                <p>Proin pharetra quam sit amet est efficitur, sit amet facilisis metus.</p>
+            </div>
+
+            <!-- Third Image Item -->
+            <div class="image-item">
+                <img src="./sciencefiction.jpg" alt="Tomb Raider"width="300" height="250">
+                <h3>sciencefiction</h3>
+                <p>Suspendisse potenti. In nec risus eget libero aliquet varius.</p>
+            </div>
+
+            <!-- Fourth Image Item -->
+            <div class="image-item">
+                <img src="./history.jpg" alt="Biography History"width="300" height="250">
+                <h3>History</h3>
+                <p>Donec consectetur quam eget purus malesuada, ac varius ligula auctor.</p>
+            </div>
+
+            <!-- Fifth Image Item -->
+            <div class="image-item">
+                <img src="./biography.jpg" alt="Science Fiction" width="300" height="250">
+                <h3>Biography</h3>
+                <p>Nulla facilisi. Integer eget enim eget est tempor tincidunt.</p>
+            </div>
+
+            <!-- Sixth Image Item -->
+            <div class="image-item">
+                <img src="./stuff fantasy.jpeg" alt="Science Stories"width="300" height="250">
+                <h3>Fantasy Novels</h3>
+                <p>Ut auctor libero sed lorem sollicitudin vehicula.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+        
+</body>
+</html>
